@@ -1,7 +1,7 @@
 import React from "react";
 import api from "../api/unsplash";
 import Search from "./Search";
-// import ImageList from "./ImageList/ImageList";
+import ImageList from "./ImageList/ImageList";
 
 class App extends React.Component {
    state = {images: []}
@@ -18,7 +18,7 @@ class App extends React.Component {
       <div className="ui container" style={{ marginTop: "50px" }}>
         <Search runSubmit={this.handleSubmit} />
         <div >
-         {/* <ImageList imageLists={this.state.images}/> */}
+         <ImageList imageLists={this.state.images}/>
         </div>
       </div>
     );
